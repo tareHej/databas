@@ -8,12 +8,10 @@ from admin import *
 
 
 def connectServer():
-    
-    try:
-        connection = psycopg2.connect(
-            user="",
+    connection = psycopg2.connect(
+            dbname=""
+            username="",
             password="",
             host="pgserver.usab.us",
-            database=""
         )
-        return connection
+    return connection
